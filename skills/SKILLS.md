@@ -28,8 +28,14 @@ Skill `SKILL.md` files load **only when a task matches** — picked from this in
 ### obsidian-cli (vault ops — in `skills/`, auto-discovered)
 - **obsidian-cli** — Read/create/edit notes, tags, backlinks, tasks, plugin & theme dev in a running Obsidian vault. Use for vault *operations* (not search — that's `qmd`'s job). Requires Obsidian open. | `skills/obsidian-cli/SKILL.md`
 
+### design-skills (curated index — in `skills/`, auto-discovered)
+- **design-skills** — Pick the right design skill for a task instead of guessing. `impeccable` is the primary design engine (design / redesign / audit / polish any frontend UI); this index routes the rest — research (`user-research` / `research-synthesis`), Figma → code (`figma-to-code`), themes for decks/docs (`theme-factory`), visual canvases (`json-canvas`), dev handoff (`design-handoff`). Read it first when a task is "design X" / "audit this design" / "hand off this design". | `skills/design-skills/SKILL.md`
+
+### impeccable (frontend design language — installs an engine binary on first run)
+- **impeccable** — Design guidance for AI coding agents: 24 commands (craft/shape/critique/audit/polish/bolder/quieter/distill/animate/colorize/layout/typeset/delight/harden/onboard), 61 deterministic AI-design "tells," a craft floor (contrast/depth/spacing/type/motion/states/browser-surfaces bans), and Operate/Read/Persuade/Experience mode depth. Use to design, redesign, audit, or polish any frontend surface (dashboards, landing pages, app shells, forms, empty states). The launcher downloads a verified engine binary (sha256-checked) on first run; on Windows call `scripts/impeccable.cmd`. | `skills/impeccable/SKILL.md`
+
 design (in `skills/`, auto-discovered — detailed rows in G-Stack section below)
-- frontend-design, design-taste-frontend, redesign-existing-projects, figma-to-code, design-design-critique, design-handoff, design-system, theme-factory, vercel-web-design-guidelines, accessibility-review, ux-flow-wireframer, ux-copy, research-synthesis
+- impeccable, frontend-design, figma-to-code, design-handoff, theme-factory, user-research, research-synthesis
 
 ### ponytail (mode — persistent guardrail — detailed rows in G-Stack section below)
 - **ponytail**, ponytail-review, ponytail-audit, ponytail-debt, ponytail-gain, ponytail-help
@@ -148,5 +154,5 @@ They're registered in `settings.json` `packages` but don't appear as skills here
 - Over-engineered code → **ponytail-review**
 - Index/understand a codebase → **graphify** (persistent knowledge graph, semi-always-on via graphify-pi)
 - Search local markdown → **qmd** (instant, ranked); fallback **obsidian-cli** for vault bits the index lacks
-- Boring/generic-looking UI → **design-taste-frontend** (build) or **redesign-existing-projects** (upgrade)
+- Boring/generic-looking UI → **impeccable** (design, redesign, polish, or run its 61-rule detector)
 - Everything → **ponytail** is on by default; the ladder (skip → reuse → stdlib → native → dep → one line → minimum)

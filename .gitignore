@@ -20,6 +20,7 @@ models.json
 .gsd-profile
 gsd-install-state.json
 gsd-migration-journal/
+missions/
 
 # ---- Backups ----
 *.bak*
