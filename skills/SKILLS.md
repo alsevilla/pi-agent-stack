@@ -31,6 +31,9 @@ Skill `SKILL.md` files load **only when a task matches** — picked from this in
 ### design-skills (curated index — in `skills/`, auto-discovered)
 - **design-skills** — Pick the right design skill for a task instead of guessing. Groups the design skills by pipeline (research → plan → design → standardize → audit → hand off) and flags that `design-taste-frontend` is a taste checklist, not a full design method. Read it first when a task is "design X" / "audit this design" / "hand off this design". | `skills/design-skills/SKILL.md`
 
+### impeccable (frontend design language — installs an engine binary on first run)
+- **impeccable** — Design guidance for AI coding agents: 24 commands (craft/shape/critique/audit/polish/bolder/quieter/distill/animate/colorize/layout/typeset/delight/harden/onboard), 61 deterministic AI-design "tells," a craft floor (contrast/depth/spacing/type/motion/states/browser-surfaces bans), and Operate/Read/Persuade/Experience mode depth. Use to design, redesign, audit, or polish any frontend surface (dashboards, landing pages, app shells, forms, empty states). The launcher downloads a verified engine binary (sha256-checked) on first run; on Windows call `scripts/impeccable.cmd`. | `skills/impeccable/SKILL.md`
+
 design (in `skills/`, auto-discovered — detailed rows in G-Stack section below)
 - frontend-design, design-taste-frontend, redesign-existing-projects, figma-to-code, design-design-critique, design-handoff, design-system, theme-factory, vercel-web-design-guidelines, accessibility-review, ux-flow-wireframer, ux-copy, research-synthesis
 
