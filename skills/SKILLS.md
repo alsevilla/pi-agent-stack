@@ -28,6 +28,9 @@ Skill `SKILL.md` files load **only when a task matches** — picked from this in
 ### obsidian-cli (vault ops — in `skills/`, auto-discovered)
 - **obsidian-cli** — Read/create/edit notes, tags, backlinks, tasks, plugin & theme dev in a running Obsidian vault. Use for vault *operations* (not search — that's `qmd`'s job). Requires Obsidian open. | `skills/obsidian-cli/SKILL.md`
 
+### design-skills (curated index — in `skills/`, auto-discovered)
+- **design-skills** — Pick the right design skill for a task instead of guessing. Groups the design skills by pipeline (research → plan → design → standardize → audit → hand off) and flags that `design-taste-frontend` is a taste checklist, not a full design method. Read it first when a task is "design X" / "audit this design" / "hand off this design". | `skills/design-skills/SKILL.md`
+
 design (in `skills/`, auto-discovered — detailed rows in G-Stack section below)
 - frontend-design, design-taste-frontend, redesign-existing-projects, figma-to-code, design-design-critique, design-handoff, design-system, theme-factory, vercel-web-design-guidelines, accessibility-review, ux-flow-wireframer, ux-copy, research-synthesis
 
