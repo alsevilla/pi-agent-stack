@@ -89,6 +89,16 @@ points at a `SKILL.md` that loads on demand.
     `ce-code-review` handles normal changes.
   - Niche gstack rows (ios-fix/qa/design-review/clean/sync, codex, pair-agent,
     gbrain setup/sync) are folded into one "rarely used" row.
+  - Design skills collapsed onto one engine: `impeccable` does design /
+    redesign / audit / polish for any frontend UI, so 9 redundant design
+    skills were removed from disk (`anthropic-frontend-design`,
+    `redesign-existing-projects`, `design-taste-frontend`,
+    `design-design-critique`, `vercel-web-design-guidelines`, `design-system`,
+    `ux-copy`, `ux-flow-wireframer`, `accessibility-review`). The
+    `design-skills` index now routes research (`user-research`,
+    `research-synthesis`), Figma → code (`figma-to-code`), themes
+    (`theme-factory`), canvases (`json-canvas`), and handoff
+    (`design-handoff`) around it.
 - **`project-memory/`** — session memory convention. Copies `.planning/`
   (`STATE.md`, `PROJECT.md`, `ROADMAP.md`, `REQUIREMENTS.md`) into a project,
   read-at-start / append-at-end, and feeds Serena / ce-compound / graphify.
@@ -99,7 +109,10 @@ points at a `SKILL.md` that loads on demand.
   parallel authority.
 - **`WORKFLOW.md`** — the full workflow diagram + cross-links + deprecations,
   moved out of the index to keep the index lean.
-- Design / obsidian / ponytail / subagents skills — unchanged references from
+- Design skills: `impeccable` is the primary design engine; the rest
+  (`user-research`, `research-synthesis`, `figma-to-code`, `theme-factory`,
+  `json-canvas`, `design-handoff`) are routed through the `design-skills`
+  index. Obsidian / ponytail / subagents skills are unchanged references from
   upstream. graphify is provided by `npm:graphify-pi`.
 
 ### `WORKFLOW.md`
@@ -227,8 +240,9 @@ system already has `gh`/`fd` on PATH, you can drop these entirely
 
 ## Reverting / editing
 
-Skills on disk are **not deleted** by this stack — only index pointers in
-`SKILLS.md` are adjusted (deprioritized, never removed). To restore an
-uninstalled/upstream behavior, edit `SKILLS.md`. The `.planning/` memory files
-in any project are yours; `STATE.md` is append/update-only (never rewritten) to
+The index in `SKILLS.md` is the source of truth. A skill can be removed from
+disk (as with the 9 redundant design skills folded into `impeccable`) — restore
+it by re-adding its files and its row in `SKILLS.md`. To deprioritize a skill
+without deleting it, edit its row instead. The `.planning/` memory files in any
+project are yours; `STATE.md` is append/update-only (never rewritten) to
 preserve history.
