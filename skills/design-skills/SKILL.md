@@ -31,21 +31,6 @@ doesn't touch.
 | Build a visual canvas (mind map, flowchart, diagram) | `json-canvas` | `skills/json-canvas/SKILL.md` |
 | Turn a finished design into a dev spec sheet | `design-handoff` | `skills/design-handoff/SKILL.md` |
 
-## Why so few now
-
-`impeccable` absorbed the skills it fully covers, so they were removed:
-
-- `anthropic-frontend-design`, `redesign-existing-projects` → `impeccable` craft/shape
-- `design-taste-frontend` → `impeccable` craft-floor + 61-rule detector
-- `design-design-critique`, `vercel-web-design-guidelines` → `impeccable` critique/audit
-- `design-system`, `ux-copy`, `ux-flow-wireframer`, `accessibility-review` → `impeccable` covers these for light use
-
-Those four (`design-system`, `ux-copy`, `ux-flow-wireframer`, `accessibility-review`)
-each had deeper specialized form; they were removed in favor of `impeccable`. If you
-need a full **WCAG 2.1 AA** audit or a durable **token + component-doc** system,
-reinstall the skill or add it back — `impeccable`'s detector checks AI-design *tells*,
-not a complete WCAG checklist.
-
 ## How to use
 
 1. Match the current need to the table.
