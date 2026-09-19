@@ -20,7 +20,8 @@ skills (GSD Core, compound-engineering, gstack) — they're lazy too.
 - Extensions loaded at startup (always-on tools/lifecycle, not lazy skills —
   keep in `packages`; do not remove to slim down): graphify-pi, pi-serena,
   gsd-core (`/gsd`), compound (`ce-*`), gstack (router + specialists),
-  pi-subagents, pi-ask-user.
+  pi-subagents, pi-ask-user, betterwright (the `browser`/`browser_download`
+  tools — operator guidance is the lazy `skills/betterwright/SKILL.md`).
 
 ### What is lazy (read `SKILLS.md`, then load the one you need)
 - **superpowers** system (brainstorming, writing-plans, TDD, systematic-debugging,

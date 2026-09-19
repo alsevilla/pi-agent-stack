@@ -17,6 +17,7 @@
     "npm:pi-subagents",
     "npm:pi-ask-user",
     "git:github.com/garrytan/gstack",
-    "npm:graphify-pi"
+    "npm:graphify-pi",
+    "npm:betterwright"
   ]
 }
