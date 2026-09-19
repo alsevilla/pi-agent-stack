@@ -22,6 +22,9 @@ Skill `SKILL.md` files load **only when a task matches** — picked from this in
 ### qmd (local markdown search — in `skills/`, auto-discovered)
 - **qmd** — Query local markdown knowledge bases, notes, docs, wikis with QMD (BM25 + semantic + local LLM rerank, all local via node-llama-cpp). Use before web search when the answer may already be in indexed local files; also set up QMD access for a project. Prereq: `npm install -g @tobilu/qmd` (installed globally). Always: search → `qmd get`/`qmd multi-get` full source → answer citing paths/docids. MCP mode also available (`qmd mcp`). Prefer over the Obsidian CLI for search (instant, ranked). | `skills/qmd/SKILL.md`
 
+### betterwright (persistent policy-guarded browser — in `skills/`, auto-discovered)
+- **betterwright** — Drive a persistent, policy-guarded real web browser for live-web tasks (logging in, filling forms, booking, buying, reading a page an API won't give you). Native `browser`/`browser_download` tools are always loaded via `npm:betterwright`; this skill teaches the CLI + operate/safety rules. Use for anything needing the live web. | `skills/betterwright/SKILL.md`
+
 ### graphify (codebase knowledge graph — via `npm:graphify-pi`)
 - **graphify** — Turn any folder of code/docs/papers/images/video into a persistent navigable knowledge graph (interactive HTML + GraphRAG JSON + plain-language GRAPH_REPORT.md), with query/path/explain. Use to index a codebase, answer architecture questions, or navigate relationships; semi-always-on via the graphify-pi extension (consult `graphify-out/wiki/index.md` → `GRAPH_REPORT.md` → `graph.json` before broad search; run `graphify update .` when code changed). Command: `/graphify <path>` / `--update` / `query` / `path` / `explain`. | `npm:graphify-pi`
 
@@ -144,6 +147,7 @@ They're registered in `settings.json` `packages` but don't appear as skills here
 | Skill | When to use | Location |
 |---|---|---|
 | `npm:@bacnh85/pi-serena` | Semantic code tools (understand/refactor a codebase) via a persistent worker. Use for codebase architecture questions, refactors, or large multi-file changes. Binary: `serena` (also `serena-agent` on PATH). | `~/.pi/agent/npm/node_modules/@bacnh85/pi-serena/` |
+| `npm:betterwright` | Persistent, policy-guarded web browser (network controls, trusted credential fill, proof screenshots, captcha). Native `browser`/`browser_download` tools always loaded; operator guidance lives in the lazy `skills/betterwright/SKILL.md`. Use for live-web tasks an API won't give you. | `~/.pi/agent/npm/node_modules/betterwright/` |
 
 ---
 
