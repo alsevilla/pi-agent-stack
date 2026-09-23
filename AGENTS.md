@@ -23,6 +23,14 @@ skills (GSD Core, compound-engineering, gstack) — they're lazy too.
   pi-subagents, pi-ask-user, betterwright (the `browser`/`browser_download`
   tools — operator guidance is the lazy `skills/betterwright/SKILL.md`).
 
+> **Browser verification → betterwright, never the native `browser` tool.**
+> For any "does this render / does the UI work" check in this repo, drive the
+> browser with `betterwright run -c "..."` (see `skills/betterwright/SKILL.md`),
+> not the built-in `browser` tool. The native tool has been unreliable here
+> (empty calls, token-limit truncation). `betterwright run -c` runs snippets in
+> a restricted sandbox: use `page.evaluate(() => ...)` to read/write the page,
+> and avoid inline `$$eval`/`$eval` callbacks (the runner mangles them).
+
 ### What is lazy (read `SKILLS.md`, then load the one you need)
 - **superpowers** system (brainstorming, writing-plans, TDD, systematic-debugging,
   verification, code-review…) — on demand via `SKILLS.md`.
