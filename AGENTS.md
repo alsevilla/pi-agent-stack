@@ -15,7 +15,8 @@ skills (GSD Core, compound-engineering, gstack) — they're lazy too.
 
 ### What stays loaded
 - `ponytail` (persistent mode, already in the system prompt) — on by default.
-- Built-in skills in `~/.pi/agent/skills/` (obsidian-*, json-canvas, defuddle)
+- Built-in skills in `~/.pi/agent/skills/` (obsidian-*, json-canvas, defuddle,
+  design-*, ui-ux-pro-max, frontend-design, full-stack-e2e-review)
   — auto-discovered.
 - Extensions loaded at startup (always-on tools/lifecycle, not lazy skills —
   keep in `packages`; do not remove to slim down): graphify-pi, pi-serena,
