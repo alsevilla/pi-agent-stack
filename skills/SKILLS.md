@@ -31,8 +31,14 @@ Skill `SKILL.md` files load **only when a task matches** — picked from this in
 ### impeccable (frontend design language — installs an engine binary on first run)
 - **impeccable** — Design guidance for AI coding agents: a command set (craft/shape/critique/audit/polish/bolder/quieter/distill/animate/colorize/layout/typeset/delight/harden/onboard) across build→evaluate→refine→enhance→fix→iterate, a craft floor (contrast/depth/spacing/type/motion/states/browser-surfaces bans), and Operate/Read/Persuade/Experience mode depth. Use to design, redesign, audit, or polish any frontend surface (dashboards, landing pages, app shells, forms, empty states). The launcher runs a self-contained binary (sha256-checked) on first run; on Windows call `scripts/impeccable.cmd`. | `skills/impeccable/SKILL.md`
 
-design (in `skills/`, auto-discovered — detailed rows in G-Stack section below)
-- impeccable, **design-taste-frontend** — anti-slop skill for landing pages, portfolios, and redesigns: read the brief, infer the design direction, ship interfaces that don't look templated. Not for dashboards/data tables. | `skills/design-taste-frontend/SKILL.md`
+### design (frontend & UI design — in `skills/`, auto-discovered)
+- **design-taste-frontend** — anti-slop skill for landing pages, portfolios, and redesigns: read the brief, infer the design direction, ship interfaces that don't look templated. Not for dashboards/data tables. | `skills/design-taste-frontend/SKILL.md`
+- **frontend-design** — aesthetic direction for new/reshaped UI: distinct, opinionated palette, typography, and layout rooted in the subject matter; deliberately not templated defaults. | `skills/frontend-design/SKILL.md`
+- **ui-ux-pro-max** — searchable local UI/UX intelligence (79 styles, 192 palettes, font pairings, UX guidelines, icons, GSAP presets, chart types, stacks) for designing/reviewing interfaces. | `skills/ui-ux-pro-max/SKILL.md`
+- **design-dashboards** — dashboard critique, concept, redesign, and spec: dashboards as working instruments for decisions, operational/real-time aware. | `skills/design-dashboards/SKILL.md`
+- **design-motion-principles** — motion & interaction design: build purposeful motion or audit existing animations for AI-slop (emits a branded HTML report). React/CSS/Framer/HTML. | `skills/design-motion-principles/SKILL.md`
+- **web-design-guidelines** — review UI for Web Interface Guidelines compliance (accessibility/UX best practices, sourced from Vercel). | `skills/web-design-guidelines/SKILL.md`
+- **full-stack-e2e-review** — end-to-end product/feature review across architecture, data, APIs, permissions, billing, tests, and real browser UX. | `skills/full-stack-e2e-review/SKILL.md`
 
 ### ponytail (mode — persistent guardrail — detailed rows in G-Stack section below)
 - **ponytail**, ponytail-review, ponytail-audit, ponytail-debt, ponytail-gain, ponytail-help
@@ -159,4 +165,5 @@ They're registered in `settings.json` `packages` but don't appear as skills here
 - Index/understand a codebase → **graphify** (persistent knowledge graph, semi-always-on via graphify-pi)
 - Search local markdown → **qmd** (instant, ranked); fallback **obsidian-cli** for vault bits the index lacks
 - Boring/generic-looking UI → **impeccable** (design, redesign, polish, or run its 61-rule detector)
+- Landing page / portfolio / redesign → **design-taste-frontend**; dashboard → **design-dashboards**; motion/animation → **design-motion-principles
 - Everything → **ponytail** is on by default; the ladder (skip → reuse → stdlib → native → dep → one line → minimum)

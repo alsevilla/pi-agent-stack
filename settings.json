@@ -1,5 +1,5 @@
 {
-  "lastChangelogVersion": "0.87.0",
+  "lastChangelogVersion": "0.87.1",
   "theme": "dark",
   "thinkingBudgets": {
     "low": 1024,
@@ -9,7 +9,6 @@
   "packages": [
     "npm:pi-llama-cpp",
     "git:github.com/DietrichGebert/ponytail",
-    "npm:@sentiolabs/pi-frontend-design",
     "npm:@bacnh85/pi-serena",
     "npm:pi-mcp-adapter",
     "npm:@bacnh85/pi-obsidian",
