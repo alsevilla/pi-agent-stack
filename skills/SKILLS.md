@@ -13,9 +13,6 @@ Skill `SKILL.md` files load **only when a task matches** — picked from this in
 
 > **`superpowers:brainstorming` is deprecated** — `ce-brainstorm` is the sole primary brainstormer (intent-first). Kept on disk as fallback only; do not route to it. Superpowers still runs the TDD + executing-plans loop.
 
-### anti-slop (consolidated taste rule — in `skills/`, auto-discovered)
-- **anti-slop** — One checklist for anti-AI-slop across code + UI + writing: 27 code rules (ponytail's domain), UI taste (design-taste's domain), banned phrases, communication style. Not a new skill — the shared reference that **ponytail** + **ponytail-review** + the **design-* ** skills already enforce. Read it when reviewing code, shaping UI, or checking your own writing. | `skills/anti-slop/SKILL.md`
-
 ### project-memory (session memory — in `skills/`, auto-discovered)
 - **project-memory** — Explicit cross-session project memory: `.planning/` (STATE.md live state, PROJECT.md, ROADMAP.md, REQUIREMENTS.md) + `docs/`. Use on greenfield bootstrap or when opening an existing project mid-work. Feed: Serena (how-to), ce-compound (solutions/), graphify (index the memory). | `skills/project-memory/SKILL.md`
 
@@ -31,14 +28,11 @@ Skill `SKILL.md` files load **only when a task matches** — picked from this in
 ### obsidian-cli (vault ops — in `skills/`, auto-discovered)
 - **obsidian-cli** — Read/create/edit notes, tags, backlinks, tasks, plugin & theme dev in a running Obsidian vault. Use for vault *operations* (not search — that's `qmd`'s job). Requires Obsidian open. | `skills/obsidian-cli/SKILL.md`
 
-### design-skills (curated index — in `skills/`, auto-discovered)
-- **design-skills** — Pick the right design skill for a task instead of guessing. `impeccable` is the primary design engine (design / redesign / audit / polish any frontend UI); this index routes the rest — research (`user-research` / `research-synthesis`), Figma → code (`figma-to-code`), themes for decks/docs (`theme-factory`), visual canvases (`json-canvas`), dev handoff (`design-handoff`). Read it first when a task is "design X" / "audit this design" / "hand off this design". | `skills/design-skills/SKILL.md`
-
 ### impeccable (frontend design language — installs an engine binary on first run)
-- **impeccable** — Design guidance for AI coding agents: 24 commands (craft/shape/critique/audit/polish/bolder/quieter/distill/animate/colorize/layout/typeset/delight/harden/onboard), 61 deterministic AI-design "tells," a craft floor (contrast/depth/spacing/type/motion/states/browser-surfaces bans), and Operate/Read/Persuade/Experience mode depth. Use to design, redesign, audit, or polish any frontend surface (dashboards, landing pages, app shells, forms, empty states). The launcher downloads a verified engine binary (sha256-checked) on first run; on Windows call `scripts/impeccable.cmd`. | `skills/impeccable/SKILL.md`
+- **impeccable** — Design guidance for AI coding agents: a command set (craft/shape/critique/audit/polish/bolder/quieter/distill/animate/colorize/layout/typeset/delight/harden/onboard) across build→evaluate→refine→enhance→fix→iterate, a craft floor (contrast/depth/spacing/type/motion/states/browser-surfaces bans), and Operate/Read/Persuade/Experience mode depth. Use to design, redesign, audit, or polish any frontend surface (dashboards, landing pages, app shells, forms, empty states). The launcher runs a self-contained binary (sha256-checked) on first run; on Windows call `scripts/impeccable.cmd`. | `skills/impeccable/SKILL.md`
 
 design (in `skills/`, auto-discovered — detailed rows in G-Stack section below)
-- impeccable, frontend-design, figma-to-code, design-handoff, theme-factory, user-research, research-synthesis
+- impeccable, **design-taste-frontend** — anti-slop skill for landing pages, portfolios, and redesigns: read the brief, infer the design direction, ship interfaces that don't look templated. Not for dashboards/data tables. | `skills/design-taste-frontend/SKILL.md`
 
 ### ponytail (mode — persistent guardrail — detailed rows in G-Stack section below)
 - **ponytail**, ponytail-review, ponytail-audit, ponytail-debt, ponytail-gain, ponytail-help
@@ -53,11 +47,17 @@ These three are the same engineering discipline at different layers. Load order 
 | **`/gsd`** + `gsd_invoke` | Run any GSD command/tool — the meta-workflow hub | native command + tool (gsd-core) |
 | `gsd-new-project` | Greenfield project bootstrap | native command |
 | `gsd-onboard` | Onboard an existing codebase | native command |
-| `gsd-spec` | Write a spec (the GSD spec-driven loop) | `gsd_invoke` family |
-| `gsd-planning` | Plan the implementation | `gsd_invoke` family |
-| `gsd-context-monitor` | Track/refresh context during work | `gsd_invoke` family |
-| `gsd-review` | Structured review pass | `gsd_invoke` family |
-| `gsd-release` | Orchestrate release | `gsd_invoke` family |
+| `requirements` | Write a spec (the GSD spec-driven loop) | `gsd_invoke` family |
+| `planning` / `phase` | Plan the implementation | `gsd_invoke` family |
+| `state` | Track/refresh context during work | `gsd_invoke` family |
+| `verify` / `verification` | Structured review pass | `gsd_invoke` family |
+| `validate` / `verify` | Orchestrate release | `gsd_invoke` family |
+
+> gsd-core v1.13.0 families (verified): `state`, `verify`, `verification`,
+> `planning`, `phase`, `phases`, `milestone`, `requirements`, `roadmap`,
+> `graphify`, `intel`, `audit`, `eval`, `init`, `validate`, `quick-batch`,
+> `refactor-trigger`. The old names `gsd-spec`/`gsd-planning`/`gsd-review`/
+> `gsd-release`/`gsd-context-monitor` do **not** exist — use the real names above.
 
 **superpowers** — the *engine that runs the loop* (method skills, discovered markdown). Loads when a task matches; mapped here as the execution backbone of the G-Stack. Installs via `pi install git:github.com/obra/superpowers`.
 
